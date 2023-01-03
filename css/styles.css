@@ -1,0 +1,250 @@
+:root {
+    --dark-color: #2E2F42;
+    --text-color: #434455;
+    --primary-brand-color: #4D5AE5;
+    --background-color: #FFFFFF;
+    --accent-color: #E7E9FC;
+    --light-color: #F4F4FD;
+    --pressed-state-color: #404BBF;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    color: var(--dark-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/*---------- HEADER------------ */
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.header-logo {
+    color: var(--dark-color);
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header-logo .web {
+    color: var(--primary-brand-color);
+}
+
+.link {
+    color: var(--dark-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--text-color);
+}
+.link:focus {
+    color:var(--primary-brand-color);
+}
+
+.header-mail {
+    color: var(--dark-color);
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.header-tel {
+    color: var(--dark-color);
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header-mail:hover,
+.header-mail:focus {
+    color: var(--primary-brand-color);
+}
+
+.header-tel:hover,
+.header-tel:focus {
+    color: var(--primary-brand-color);
+}
+
+.site-nav {
+    list-style: none;
+}
+
+/*---------- HERO------------ */
+
+.hero {
+    background: var(--dark-color);
+}
+
+.hero-title {
+    padding-top: 188px;
+    margin-bottom: 48px;
+
+    color: var(--background-color);
+
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.hero-btn {
+    color: var(--background-color);
+    background: var(--primary-brand-color);
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--pressed-state-color);
+}
+
+/* ----------SECTIONS---------------- */
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.section-list .title {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.section-list .text {
+    color: var(--text-color)
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.section-list {
+    list-style: none;
+}
+
+/* -------------PRINCIPLES--------- */
+
+/* -------------EXAMPLES----------- */
+
+.examples .section-title {
+    margin-bottom: 72px;
+}
+
+/* -------------TEAM--------------- */
+
+.team {
+    background-color: var(--light-color);
+}
+
+.team .section-title {
+    padding-top: 120px;
+    margin-bottom: 72px;
+}
+
+.team-list {
+    text-align: center;
+}
+
+/* ------------FOOTER------------- */
+
+.footer {
+    background: var(--dark-color);
+}
+
+.footer-logo {
+    color: var(--light-color);
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-logo .web {
+    color: var(--primary-brand-color);
+}
+
+.footer-text {
+    margin-top: 16px;
+    padding-bottom: 100px;
+
+    color: var(--accent-color);
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* -------PORTFOLIO--------- */
+
+.filter-btn {
+    color: var(--primary-brand-color);
+    background-color: var(--light-color);
+
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--background-color);
+    background-color: var(--primary-brand-color);
+}
