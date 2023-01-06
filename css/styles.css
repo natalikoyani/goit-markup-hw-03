@@ -6,6 +6,7 @@
   --accent-color: #e7e9fc;
   --light-color: #f4f4fd;
   --pressed-state-color: #404bbf;
+  --column-gap: 24px;
 }
 
 p,
@@ -20,7 +21,7 @@ h6 {
 
 ul {
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 img {
@@ -189,6 +190,7 @@ body {
 
 .section-list .title {
   margin-bottom: 8px;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -208,32 +210,16 @@ body {
 
 /* -------------PRINCIPLES--------- */
 
-/* .principles .section-list {
-    justify-content: space-between;
-}
-
-.principles .title {
-    padding-top: 120px;
-}
-
-.principles .text {
-    padding-bottom: 120px;
-    max-width: 264px;
-} */
-
 .principles .section-list {
-  gap: 24px;
+  gap: var(--column-gap);
 }
 
 .principles-list-item {
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 3 * var(--column-gap)) / 4);
 }
 
-.principles .title {
+.principles-list-content {
   padding-top: 120px;
-}
-
-.principles .text {
   padding-bottom: 120px;
 }
 
@@ -241,7 +227,11 @@ body {
 
 .examples .section-list {
   padding-bottom: 120px;
-  justify-content: space-between;
+  gap: var(--column-gap);
+}
+
+.examples-list-item {
+  flex-basis: calc((100% - 2 * var(--column-gap)) / 3);
 }
 
 /* -------------TEAM--------------- */
@@ -256,26 +246,23 @@ body {
 
 .team .section-list {
   padding-bottom: 120px;
-  justify-content: space-between;
+  gap: var(--column-gap);
 }
 
 .team-list {
   text-align: center;
 }
 
-.team .section-item {
+.team-list-item {
+  flex-basis: calc((100% - 3 * VAR(--column-gap)) / 4);
   background-color: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
 
-.title.team-list {
-  padding-top: 32px;
-}
-
-.text.team-list {
-  padding-bottom: 32px;
+.team-list-content {
+  padding: 32px 16px;
 }
 
 /* ------------FOOTER------------- */
@@ -317,6 +304,10 @@ body {
 /* -------PORTFOLIO--------- */
 
 .filter-btn {
+  padding: 12px 24px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+
   color: var(--primary-brand-color);
   background-color: var(--light-color);
 
@@ -326,7 +317,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  align-items: center;
   text-align: center;
   cursor: pointer;
 }
@@ -337,6 +327,26 @@ body {
   background-color: var(--primary-brand-color);
 }
 
-.portfolio .section-list {
+.section-list.buttons {
+  padding-top: 96px;
+  margin-bottom: 72px;
+  gap: 24px;
+  justify-content: center;
+}
+
+.section-list.card-set {
   flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  padding-bottom: 120px;
+}
+
+.card-item {
+  flex-basis: calc((100% - 2 * var(--column-gap)) / 3);
+  border-bottom: 1px solid var(--accent-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.card-content {
+  padding: 32px 54px 32px 16px;
 }
